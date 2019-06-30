@@ -1614,7 +1614,7 @@ impl<'a, 'tcx> LifetimeContext<'a, 'tcx> {
                     }
                 }
                 Some(LifetimeUseSet::Many) => {
-                    debug!("Not one use lifetime");
+                    debug!("not one use lifetime");
                 }
                 None => {
                     let hir_id = self.tcx.hir().as_local_hir_id(def_id).unwrap();
